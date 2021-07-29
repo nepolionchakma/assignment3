@@ -1,9 +1,18 @@
+/* google feComponentTransfer */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* body  */
+body{
+    font-family: 'Poppins', sans-serif;
+}
 img{
     width: 100%;
 }
 
 .bg-honda-header{
-    background-color: #264653;
+    background-color: #0e8fc2!important;
 }
 
 .cbr-btn{
@@ -14,9 +23,7 @@ img{
     color: #E76F51;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
+
 
 .cbr-grayscale{
     filter: grayscale(1);
@@ -26,4 +33,39 @@ body{
 .happy-img{
     height: 210px!important;
     width: 210px!important;
+}
+.cbr-accordion{
+    color: #000!important;
+}
+.cbr-faq-bg-color{
+    background: none;
+}
+.cbr-faq-color{
+    color: #7E848C;
+}
+.cbr-scrollspy {
+    position: relative;
+    height: 263px;
+    margin-top: .5rem;
+    overflow: hidden;
+}
+.cbr-scrollspy-img {
+    width: 100%!important;
+}
+.bg-honda-footer{
+    background-color: #545a5c46!important;
+}
+/* RESPONSIV */
+@media only screen and (max-width:812px)
+{
+    .cbr-scrollspy {
+        position: relative;
+        height: 753px;
+        margin-top: .5rem;
+        overflow: hidden;
+    }
+    .map{
+        height: 100%;
+        width: 100%;
+    }
 }

@@ -13,10 +13,15 @@
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
+<!-- GOOGLE FONT  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome CDN  css-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -25,14 +30,9 @@
     <header>
 
 
-
-
-
-
-
-        <nav class="navbar navbar-expand-lg bg-honda-header mx-auto pt-5 pb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-honda-header mx-auto p-4 pb-3">
             <div class="container-fluid">
-              <div class="col-xxl-9 col-xl-11 col-lg 10 mx-auto">
+              <div class="col-xxl-9 col-xl-11 col-lg-10 mx-auto col">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -51,7 +51,7 @@
                         <a class="nav-link text-white fw-bold" href="#">Contact</a>
                       </li>
                       <li class="nav-item ps-5">
-                        <a class="nav-link btn cbr-btn text-white fw-bold px-4" href="#">Login</a>
+                        <a class="nav-link btn cbr-btn text-white fw-bold px-4 " href="#">Login</a>
                       </li>
                     </ul>
                   </div>
@@ -61,13 +61,11 @@
 
 
 
-
-
         <section class="honda-header bg-honda-header py-5">
             <div class="container-fluid">
                 <div class="row text-white">
-                   <div class="col-xxl-10 col-xl-11 col-lg 10 mx-auto d-flex align-items-center justify-content-evenly">
-                        <div class="col-xxl-5 col-lg-6">
+                   <div class="col-xxl-10 col-xl-11 col-lg-10 col-md-12 col-sm-12 mx-auto d-flex align-items-center justify-content-evenly flex-wrap">
+                        <div class="col-xxl-5 col-lg-6 col-md-12 col-sm-12 pb-4">
                             <p class="lead">
                                 Computer-controlled digital transistorized with electronic advance
                             </p>
@@ -79,11 +77,81 @@
                                 dolor do amet sint. Velit officia consequat duis enim velit <br>
                                 mollit. Exercitation veniam consequat sunt nostrud amet <br>
                             </p>
-                            <button class="btn cbr-btn text-white px-5 fw-bold py-2">
-                                Purchase
-                            </button>
+
+                            <!-- modal  -->
+
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalToggleLabel">Honda CBR 300R Details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body text-dark">
+
+                                    <div class="d-flex justify-content-center align-items-center">
+                                      <img class="happy-img " src="images/header-bike.png" alt="">
+                                    </div>
+
+                                    <!-- Show a second modal and hide this one with the button below. -->
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Speed	</th>
+                                          <th scope="col">Time</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>SS/KM</td>
+                                          <td>29.608/96 mph</td>
+                                        </tr>
+                                        <tr>
+                                          <td>SS/Mile</td>
+                                          <td>43.46/97.3mph</td>
+                                        </tr>
+                                        <tr>
+                                          <th>Top Speed -</th>
+                                          <td>97.85 mph</td>
+                                        </tr>
+                                        <tr>
+                                          <th>Price -</th>
+                                          <td>$4,699</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!-- Show a second modal and hide this one with the button below. -->
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Cart Now</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title text-dark fw-bold" id="exampleModalToggleLabel2">Are You Confirm To Buy</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body text-dark fw-bold">
+                                    Honda CBR 300R - <span class="cbr-text-color">$4,699</span>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Confirm</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="btn cbr-btn text-white px-5 fw-bold py-2" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Purchase</a>
+
+
+                            <!-- modal  -->
+
+
                         </div>
-                        <div class="col-lg-5 col-xxl-4">
+                        <div class="col-lg-5 col-xxl-4 col-md-12 col-sm-12">
                             <img src="images/header-bike.png" alt="">
                         </div>
                    </div>
@@ -103,20 +171,20 @@
             <div class="container py-5">
               <div class="feature-bike">
                 <div class="row py-5">
-                  <div class="col-lg-5 text-center mx-auto fw-bold">
-                    <h1>Fetured Bikes 2021</h1>
+                  <div class="col-lg-5 text-center mx-auto">
+                    <h1 class="fw-bold">Fetured Bikes 2021</h1>
                     <p class="cbr-text-color">Best bike collection</p>
                   </div>
                 </div>
                 <div class="row pt-5">
-                  <div class="d-flex mx-auto justify-content-center justify-content-between">
-                    <div class="col-lg-3">
+                  <div class="d-flex mx-auto justify-content-center justify-content-between  flex-wrap">
+                    <div class="col-lg-3 p-5">
                       <img class="cbr-grayscale" src="images/feature-bike.jpg" alt="">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3  p-5">
                       <img src="images/feature-bike.jpg" alt="">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 p-5">
                       <img class="cbr-grayscale" src="images/feature-bike.jpg" alt="">
                     </div>
                   </div>
@@ -131,43 +199,50 @@
 
 
         <!-- Latest News Start  -->
-        <section>
-          <div class="container">
-            <div class="py-5">
-              <h1 class="text-center py-4 fw-bold">latest News</h1>
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card rounded">
-                    <img src="images/bike-1.png" class="card-img-top p-4" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <article>
+          <section>
+            <div class="container">
+              <div class="py-5">
+                <h1 class="text-center py-4 fw-bold">latest News</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card rounded">
+                      <img src="images/bike-1.png" class="card-img-top p-4" alt="...">
+                      <div class="card-body">
+                        <h5 class="fw-bold">Ducati XDIAVEL S-73</h5>
+                        <p class="cbr-faq-color">We are good at starting you off on bikes and scooters. You will not find us as a big scary bike shop. Everyone working here loves Motorcycles and Scooters ...</p>
+                        <a class="btn cbr-btn text-white fw-bold px-4 py-2" href="#">Read More</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded">
-                    <img src="images/bike-2.png" class="card-img-top p-4" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="col">
+                    <div class="card rounded">
+                      <img src="images/bike-2.png" class="card-img-top p-4" alt="...">
+                      <div class="card-body">
+                        <h5 class="fw-bold">Motorcycles & Scooters
+                        </h5>
+                        <p class="cbr-faq-color">Buy Motorcycles & Scooters and get the best deals at the lowest prices on eBay! Great Savings & Free Delivery / Collection on many items..</p>
+                        <a class="btn cbr-btn text-white fw-bold px-4 py-2" href="#">Read More</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded">
-                    <img src="images/bike-3.png" class="card-img-top p-4" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="col">
+                    <div class="card rounded">
+                      <img src="images/bike-3.png" class="card-img-top p-4" alt="...">
+                      <div class="card-body">
+                        <h5 class="fw-bold">2021 Honda CBR500R
+                        </h5>
+                        <p class="cbr-faq-color">Honda CBR500R is expected to be launched in Aug, 2021 in India with estimated price 4.99 Lakh. Check CBR500R Specifications, Images, Mileage and Colours ...</p>
+                        <a class="btn cbr-btn text-white fw-bold px-4 py-2" href="#">Read More</a>
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
-                
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </article>
         <!-- Latest News End   -->
 
 
@@ -176,42 +251,70 @@
 
 
 
-        <section>
-          <div class="container">
-            <div class="py-5">
-              <h1 class="text-center py-4 fw-bold">latest News</h1>
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card rounded d-flex align-items-center justify-content-center">
-                    <img src="images/user-1.png" class="card-img-top p-4 rounded-circle happy-img" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <article>
+          <section>
+            <div class="container">
+              <div class="py-5">
+                <h1 class="text-center py-5 fw-bold">Happy <span class="cbr-text-color">Clients says</span></h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  
+                  <div class="col">
+                    <div class="card rounded d-flex align-items-center justify-content-center">
+                      <img src="images/user-1.png" class="card-img-top p-4 rounded-circle happy-img" alt="...">
+                      <div class="text-center px-4 overflow-wrap">
+                        <p class="">Shiny Happy People. Sure, we can tell you we're brilliant, but better to hear what people are actually saying... I was using ManageWP, but there were ...</p>
+                        <p>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="far fa-star cbr-text-color"></i>
+                        </p>
+                        <p>Regina Miles</p>
+                        <p>Banker</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded d-flex align-items-center justify-content-center">
-                    <img src="images/user-2.png" class="card-img-top p-4 rounded-circle happy-img" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="col">
+                    <div class="card rounded d-flex align-items-center justify-content-center">
+                      <img src="images/user-2.png" class="card-img-top p-4 rounded-circle happy-img" alt="...">
+                      <div class="text-center px-4 overflow-wrap">
+                        <p class="">At Digital Plus, we're committed to providing our clients with visual graphics solutions that pushes the industry boundaries whilst meeting their brief.</p>
+                        <p>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="far fa-star cbr-text-color"></i>
+                        </p>
+                        <p>Regina Miles</p>
+                        <p>Banker</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded d-flex align-items-center justify-content-center">
-                    <img src="images/user-3.jpg" class="card-img-top p-4 rounded-circle happy-img" alt="...">
-                    <div class="text-center px-4 overflow-wrap">
-                      <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="col">
+                    <div class="card rounded d-flex align-items-center justify-content-center">
+                      <img src="images/user-3.jpg" class="card-img-top p-4 rounded-circle happy-img" alt="...">
+                      <div class="text-center px-4 overflow-wrap">
+                        <p class="">“If the end result is customer satisfaction, your business will thrive. If the end result is customer loyalty, your business will bloom.” ― Pooja Agnihotri,</p>
+                        <p>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="fas fa-star cbr-text-color"></i>
+                          <i class="far fa-star cbr-text-color"></i>
+                        </p>
+                        <p>Regina Miles</p>
+                        <p>Banker</p>
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
-                
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </article>
 
 
         <!-- Happy Clients says -->
@@ -220,9 +323,268 @@
 
 
 
+        <!-- Frequently Asked Questions -->
+        <article>
+          <section>
+            <div class="container">
+              <div class="row py-5  mx-auto">
+                <h1 class="py-4 text-center fw-bold">Frequently Asked<span class="cbr-text-color"> Questions</span></h1>
+                <div class="py-5 col d-flex justify-content-between flex-wrap">
+                  <div class="col-lg-5 pb-5">
+                    <img src="images/faq.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+  
+                    <!-- start  -->
+  
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button cbr-accordion cbr-faq-bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4>
+                              What are the most important things I should know about riding a bike?
+                            </h4>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p class="cbr-faq-color">
+                              Safety First! Always obey the rules of the road. Obey all traffic
+                              signals, signs, and laws. Get in the mindset of “driving” your
+                              bike—not just “riding” your bike. This will help you be a more
+                              focused and legally compliant bike rider. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4>
+                              How can I tell if my helmet is old and I need a new one?
+                            </h4>
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Bear in mind that if the helmet did its job most people would tell you that they did not even hit their head, or did not hit their head that hard. And the thin shells on most helmets now tend to hide any dents in the foam. But if you can see marks on the shell or measure any foam crush at all, replace the helmet.Helmets only start getting comfortable after about 10,000 miles. I only wear other guys' well worn lids for that reason. New ones take too long ...
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4>
+                              My bike has been in storage is it safe to ride?
+                            </h4>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Its entirely possible the bike is good and safe to ride with a bit of air in the tires and shocks/forks - this would heavily depend on the climate in the garage it was stored in and condition it was in before being hung up.Better yet, Harley-Davidson has almost 700 dealers across the country with the capabilities to winterize your ride and store it safe and sound .Need to check if your bike is safe after time in storage? ... hybrid or mountain bike, and both a new bike or one that may not have been 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4>
+                              What rules should I follow when riding my bike?
+                            </h4>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Look, Signal & Look Again Use hand signals to let drivers and other bicyclists know where you're going. Look and make eye contact. Don't assume drivers will ...Look, Signal & Look Again Use hand signals to let drivers and other bicyclists know where you're going. Look and make eye contact. Don't assume drivers will ...
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!-- Frequently Asked Questions -->
+
+
+          
+    <!--  scrollspy Popular Brands-->
+        <article>
+          <section class="border-top border-bottom navbar-light bg-light">
+            <div class="container">
+              <nav id="navbar-example2" class="navbar  p-5 ">
+                <div class="d-block">
+                  <div class="div ms-5">
+                      <h3 class="navbar-brand fw-bold ">Popular Brands</h3>
+                    </div>
+                    <br>
+                    <div class="div ms-5">
+                      <ul class="nav nav-pills">
+                          <li class="nav-item border m-3"><a class="nav-link" href="#link1">Bike</a></li>
+                          <li class="nav-item border m-3"><a class="nav-link" href="#link2">Scooter</a></li>
+                          <li class="nav-item border m-3"><a class="nav-link" href="#link3">Electric</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+              <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="cbr-scrollspy pb-5 col-md-12">
+          
+                  <div id="link1">
+                      <div class="row d-flex justify-content-evenly">
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/tvs.png" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">TVS</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/honda.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Honda</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/suzuki.png" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Suzuki</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/yamaha.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Yahama</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/bajaj.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Bajaj</p>
+                          </div>
+                      
+                      </div>
+                  </div>
+                  <div id="link2">
+                      <div class="row d-flex justify-content-evenly">
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/yamaha.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Yahama</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/suzuki.png" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Suzuki</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/mahindra.png" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Mahindra</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/honda.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Honda</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/bajaj.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Bajaj</p>
+                          </div>
+                      
+                      </div>
+                  </div>
+                  <div id="link3">
+                      <div class="row d-flex justify-content-evenly">
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/eq.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Hero Elictric</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/e2.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Ather Energy</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/e3.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Ampere</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/e4.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Revolt Motors</p>
+                          </div>
+                          <div class="col p-3 mx-5 my-4 border">
+                              <img class="cbr-scrollspy-img" src="images/b/e5.webp" alt="">
+                              <p class="pt-4 m-0 text-center fw-bold">Ultraviolette</p>
+                          </div>
+                      
+                      </div>
+                  </div>
+                  
+              </div>
+            </div>
+          </section>
+        </article>
+    <!--  scrollspy Popular Brands-->
+
+
+
+        <!-- Get In Touch  -->
+        <article>
+          <section>
+            <div class="container">
+              <div class="row  p-5">
+                <h2 class="text-center p-4">Get In Touch</h2>
+                <div class="py-4 d-flex justify-content-center justify-content-evenly flex-wrap">
+                  <div class="col-lg-5 py-4">
+                    <div class="col d-flex justify-content-center align-items-center">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14672.603993333325!2d92.1941609!3d23.164688400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37529271e9e2e691%3A0x6e8982c2a266bf59!2sBaghaichhari!5e0!3m2!1sen!2sbd!4v1627571957091!5m2!1sen!2sbd" width="600" height="450" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                  </div>
+    
+    
+                  <div class="col-lg-5 p-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Fast Name</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Fast Name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Message </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      
+                    </div>
+                    <div class="col-lg-3">
+                      <a class="nav-link btn cbr-btn text-white fw-bold px-4 " type="submit" href="#">Send</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <!-- Get In Touch  -->
+
+
+     
 
     </main>
-    <footer></footer>
+    <footer>
+      <section>
+        <div class="container-fluid bg-honda-footer">
+          <div class="row  ">
+            <div class="menu col-lg-12 pt-4">
+              <div class="text-center text-decoration-none py-4 ">
+                  <a class="text-dark mx-4" href="">Home</a>
+                <a class="text-dark mx-4"href="">Shop</a>
+                <a class="text-dark mx-4"href="">News</a>
+                <a class="text-dark mx-4"href="">Contact</a>
+              </div>
+              
+            </div>
+              <div class="col-lg-12 copyright pb-4">
+                <p class="text-center">Copyright &copy; 2021 Honda</p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </footer>
 
 
 
@@ -233,11 +595,10 @@
 
     <!-- bootstrap script  -->
 
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-    </style>
 
 
+    <!-- Font Awesome CDN  script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 </body>
