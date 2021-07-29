@@ -1,0 +1,29 @@
+img{
+    width: 100%;
+}
+
+.bg-honda-header{
+    background-color: #264653;
+}
+
+.cbr-btn{
+    background: #E76F51!important;
+}
+
+.cbr-text-color{
+    color: #E76F51;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cbr-grayscale{
+    filter: grayscale(1);
+}
+
+
+.happy-img{
+    height: 210px!important;
+    width: 210px!important;
+}
